@@ -1,0 +1,2 @@
+[13:22:42.275] [INFO] [3456] [LAPTOP-MN8EGV0E] [logger] [127.0.0.1 - - "OPTIONS /admin/logout HTTP/1.1" 200 13 "http://localhost:4200/admin/logout" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36"]
+[13:22:42.303] [INFO] [3456] [LAPTOP-MN8EGV0E] [logger] [127.0.0.1 - - "POST /admin/logout HTTP/1.1" 401 95 "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36"]
