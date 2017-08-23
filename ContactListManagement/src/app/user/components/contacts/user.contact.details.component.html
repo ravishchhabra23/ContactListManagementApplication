@@ -1,0 +1,107 @@
+<div class="container">
+    	<div class="row">
+			<div class="col-md-9 col-md-offset-1">
+				<div class="panel panel-login">
+					<div class="panel-body">
+						<div class="row">
+							<div class="col-lg-12">
+                                <div >
+                                    <div>
+                                    <input type="text" [(ngModel)]= "filterUserContact" 
+                                    [ngModelOptions] = "{standalone:true}" (keyup) ="FilterUserContact($event)"
+                                     placeholder="Filter here" />
+                                    <input type="submit" class="btn btn-primary btn-xs" 
+                                            value="Reset" (click)="ResetTable()">
+                                </div><br />
+                                    <div style="overflow-x:auto;">
+                                    <table class="table" >
+                                        <tr >
+                                            <th>Username</th>
+                                            <th>Email</th>
+                                            <th>Mobile</th>
+                                            <th>HomePhone</th>
+                                            <th>WorkPhone</th>
+                                            <th>Permanent Address</th>
+                                            <th>Temporary Address</th>
+                                        </tr>
+                                        <tr *ngFor="let usercontact of pagedItems" (click)="OnItemClick(usercontact)">
+                                            <td >
+                                               <span>{{usercontact.username}}</span>
+                                            </td>
+                                            <td>
+                                                 <span *ngIf="editrowitem==null || (editrowitem != null && 
+                                                usercontact.contactid!=editrowitem.contactid)">{{usercontact.email}}</span>
+                                               <input *ngIf="editrowitem!=null && usercontact.contactid==editrowitem.contactid" 
+                                               type="text" [(ngModel)] = "editrowitem.email" [ngModelOptions] = "{standalone:true}" />
+                                            </td>
+                                            <td>
+                                                  <span *ngIf="editrowitem==null || (editrowitem != null && 
+                                                usercontact.contactid!=editrowitem.contactid)">{{usercontact.mobile}}</span>
+                                               <input *ngIf="editrowitem!=null && usercontact.contactid==editrowitem.contactid" 
+                                               type="text" [(ngModel)] = "editrowitem.mobile" [ngModelOptions] = "{standalone:true}" />
+                                            </td>
+                                            <td>
+                                                  <span *ngIf="editrowitem==null || (editrowitem != null && 
+                                                usercontact.contactid!=editrowitem.contactid)">{{usercontact.homephone}}</span>
+                                               <input *ngIf="editrowitem!=null && usercontact.contactid==editrowitem.contactid" 
+                                               type="text" [(ngModel)] = "editrowitem.homephone" [ngModelOptions] = "{standalone:true}" />
+                                            </td>
+                                            <td>
+                                                   <span *ngIf="editrowitem==null || (editrowitem != null && 
+                                                usercontact.contactid!=editrowitem.contactid)">{{usercontact.workphone}}</span>
+                                               <input *ngIf="editrowitem!=null && usercontact.contactid==editrowitem.contactid" 
+                                               type="text" [(ngModel)] = "editrowitem.workphone" [ngModelOptions] = "{standalone:true}" />
+                                            </td>
+                                            <td>
+                                                   <span *ngIf="editrowitem==null || (editrowitem != null && 
+                                                usercontact.contactid!=editrowitem.contactid)">{{usercontact.permanentaddress}}</span>
+                                               <input *ngIf="editrowitem!=null && usercontact.contactid==editrowitem.contactid" 
+                                               type="text" [(ngModel)] = "editrowitem.permanentaddress" [ngModelOptions] = "{standalone:true}" />
+                                            </td>
+                                            <td>
+                                                <span *ngIf="editrowitem==null || (editrowitem != null && 
+                                                usercontact.contactid!=editrowitem.contactid)">{{usercontact.temporaryaddress}}</span>
+                                               <input *ngIf="editrowitem!=null && usercontact.contactid==editrowitem.contactid" 
+                                               type="text" [(ngModel)] = "editrowitem.temporaryaddress" [ngModelOptions] = "{standalone:true}" />
+                                            </td>
+                                        </tr>
+                                    </table>
+                                        <div *ngIf="editrowitem!=null" id="btndivs" >
+                                            <input type="submit" class="btn btn-success" 
+                                            value="Update" (click)="OnUpdate(editrowitem)">
+                                            <input type="submit" class="btn btn-danger" confirm
+                                            value="Delete" (confirm)="OnDelete(editrowitem)">
+                                        </div>
+                                        <!-- items being paged -->
+                                        <div *ngFor="let item of pagedItems">{{item.name}}</div>
+                                        <!-- pager -->
+                                        <ul *ngIf="pager.pages && pager.pages.length" class="pagination">
+                                            <li [ngClass]="{disabled:pager.currentPage === 1}">
+                                                <a (click)="setPage(1)">First</a>
+                                            </li>
+                                            <li [ngClass]="{disabled:pager.currentPage === 1}">
+                                                <a (click)="setPage(pager.currentPage - 1)">Previous</a>
+                                            </li>
+                                            <li *ngFor="let page of pager.pages" [ngClass]="{active:pager.currentPage === page}">
+                                                <a (click)="setPage(page)">{{page}}</a>
+                                            </li>
+                                            <li [ngClass]="{disabled:pager.currentPage === pager.totalPages}">
+                                                <a (click)="setPage(pager.currentPage + 1)">Next</a>
+                                            </li>
+                                            <li [ngClass]="{disabled:pager.currentPage === pager.totalPages}">
+                                                <a (click)="setPage(pager.totalPages)">Last</a>
+                                            </li>
+                                        </ul>
+                                        
+                                        </div>
+                                    <label >Note:</label><span>Click the row to edit or delete</span>
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="divUserDetails"></div>
+        </div>
+        
+</div>

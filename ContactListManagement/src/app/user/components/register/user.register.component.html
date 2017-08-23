@@ -1,0 +1,6 @@
+<div *ngIf="message  != ''">
+    <span style="font-size:14px;padding-left:3%;color:brown">{{message}}</span>
+</div>
+<div *ngIf="message  != 'Contact admin to enable logon.'">
+<common-register (registerevent)="Register($event)" [strinput]="strinput"></common-register>
+</div>

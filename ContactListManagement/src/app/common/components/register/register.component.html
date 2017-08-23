@@ -1,0 +1,47 @@
+<div class="container">
+    	<div class="row">
+			<div class="col-md-6 col-md-offset-3">
+				<div class="panel panel-login">
+					<div class="panel-body">
+						<div class="row">
+							<div class="col-lg-12">
+								<form (ngSubmit)="Register(user)" id="register-form" >
+									<div class="form-group">
+										<input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Username"
+										[(ngModel)]="user.username" [ngModelOptions]="{standalone:true}">
+									</div>
+									<div class="form-group">
+										<input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Password"
+										[(ngModel)]="user.password" [ngModelOptions]="{standalone:true}">
+									</div>
+									<div class="form-group" >
+										<input type="text" name="firstname" id="firstname" tabindex="3" class="form-control" placeholder="Firstname"
+										[(ngModel)]="user.firstname" [ngModelOptions]="{standalone:true}">
+									</div>
+									<div class="form-group" >
+										<input type="text" name="lastname" id="lastname" tabindex="4" class="form-control" placeholder="Lastname"
+										[(ngModel)]="user.lastname" [ngModelOptions]="{standalone:true}">
+									</div>
+									<div class="form-group" *ngIf="user.usertype==='admin'">
+										<select (ngModelChange)="onChange($event)" [(ngModel)]="selectedusertype" 
+										[ngModelOptions]="{standalone:true}">
+											<option *ngFor="let usertype of usertypes" [ngValue]="usertype"  >
+												{{usertype.name}}
+											</option>
+										</select>
+									</div>
+									<div class="form-group">
+										<div class="row">
+											<div class="col-sm-6 col-sm-offset-3">
+												<input type="submit" name="register-submit" id="register-submit" tabindex="4" class="form-control btn btn-register" value="Register">
+											</div>
+										</div>
+									</div>
+								</form>
+								</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>

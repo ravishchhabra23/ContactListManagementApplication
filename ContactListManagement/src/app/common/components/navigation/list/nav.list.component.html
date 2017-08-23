@@ -1,0 +1,7 @@
+<div id="navbar" class="nav navbar-nav"  >
+    <ng-container *ngFor = "let menuitem of menuitems" class="navbar-nav mr-auto mt-2 mt-md-0">
+        <li *ngIf="menuitem.show" [class.active]="menuitem.active">
+            <a [routerLink]="[menuitem.url]">{{menuitem.menu}}</a>
+        </li>
+    </ng-container>
+</div>

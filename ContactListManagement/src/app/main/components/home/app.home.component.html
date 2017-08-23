@@ -1,0 +1,10 @@
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<div class="col-md-2 col-lg-2"></div>
+   <div *ngFor="let module of modules" class="container col-xs-12 col-sm-12 col-md-4 col-lg-4 text-center">
+     <div  class="panel panel-default">
+        <a routerLink="/{{module.site}}" class="btn btn-block btn-lg btn-success" >
+            <i class="fa fa-users" id="icone_grande"></i> <br><br>
+            <span class="texto_grande"><i class="fa fa-plus-circle"></i>{{module.name}}</span>
+        </a>
+  </div>
+</div>

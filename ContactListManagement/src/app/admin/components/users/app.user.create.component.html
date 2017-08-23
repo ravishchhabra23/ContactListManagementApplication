@@ -1,0 +1,7 @@
+<div *ngIf="message  != ''">
+    <span>{{message}}</span>
+</div>
+
+<div>
+    <common-register (registerevent)="Register($event)" [strinput]="strinput"></common-register>
+</div>

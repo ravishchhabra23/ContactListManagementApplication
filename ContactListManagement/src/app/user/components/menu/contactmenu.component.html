@@ -1,0 +1,12 @@
+<nav class="mynavbar navbar-toggleable-md navbar-light bg-faded"  >
+    <div id="navbar" class="nav navbar-nav" style="padding-left:8%" >
+        <ng-container class="navbar-nav mr-auto mt-2 mt-md-0" class="navbar-toggle collapsed" 
+            data-toggle="collapse" data-target="#navbar">
+            <li [style.display]="display"><a routerLink="details" >Details</a></li>
+            <li [style.display]="display">
+                <a routerLink="create" >Create</a></li>
+                
+        </ng-container>
+    </div>
+</nav>
+<router-outlet></router-outlet>

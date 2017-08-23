@@ -1,0 +1,4 @@
+<label *ngIf="loggedInUser != null" style="padding-left:65%;color:dodgerblue;">
+    Logged in User : {{loggedInUser}}</label>
+<nav-main (menusearch) = "onMenuSearch($event)"></nav-main>
+<router-outlet></router-outlet>
