@@ -1,0 +1,4 @@
+[19:57:47.595] [INFO] [14684] [LAPTOP-MN8EGV0E] [logger] [127.0.0.1 - - "GET / HTTP/1.1" 405 89 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.78 Safari/537.36"]
+[19:57:58.715] [INFO] [14684] [LAPTOP-MN8EGV0E] [logger] [127.0.0.1 - - "GET /admin/users HTTP/1.1" 405 89 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.78 Safari/537.36"]
+[19:58:41.511] [INFO] [20348] [LAPTOP-MN8EGV0E] [logger] [127.0.0.1 - - "GET / HTTP/1.1" 405 89 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.78 Safari/537.36"]
+[19:58:45.200] [INFO] [20348] [LAPTOP-MN8EGV0E] [logger] [127.0.0.1 - - "GET /admin/users HTTP/1.1" 200 187 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.78 Safari/537.36"]

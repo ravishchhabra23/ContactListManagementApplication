@@ -1,0 +1,28 @@
+{
+  "name": "contactlistmanagement",
+  "version": "1.0.0",
+  "description": "contact list management site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "project"
+  ],
+  "author": "ravish",
+  "license": "ISC",
+  "dependencies": {
+    "appmetrics-dash": "^3.1.0",
+    "body-parser": "^1.17.2",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.15.3",
+    "jwt-simple": "^0.5.1",
+    "lodash": "^4.17.4",
+    "log4js": "^1.1.1",
+    "method-override": "^2.3.9",
+    "mongoose": "^4.11.5",
+    "mongoose-sequence": "^3.2.0",
+    "passport": "^0.3.2",
+    "socket.io": "^1.7.3"
+  }
+}

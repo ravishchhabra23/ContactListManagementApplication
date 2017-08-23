@@ -1,0 +1,2 @@
+[03:08:21.894] [INFO] [2532] [LAPTOP-MN8EGV0E] [logger] [127.0.0.1 - - "OPTIONS /admin/user/details HTTP/1.1" 200 19 "http://localhost:4200/admin/user/%3Aid" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36"]
+[03:08:21.916] [INFO] [2532] [LAPTOP-MN8EGV0E] [logger] [127.0.0.1 - - "GET /admin/user/details HTTP/1.1" 304 - "http://localhost:4200/admin/user/%3Aid" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36"]

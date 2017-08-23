@@ -1,0 +1,4 @@
+[21:43:04.921] [INFO] [17764] [LAPTOP-MN8EGV0E] [logger] [127.0.0.1 - - "POST /register HTTP/1.1" 400 100 "" "PostmanRuntime/6.2.5"]
+[22:56:36.364] [INFO] [11348] [LAPTOP-MN8EGV0E] [logger] [127.0.0.1 - - "GET / HTTP/1.1" 405 100 "" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.78 Safari/537.36"]
+[22:56:45.632] [INFO] [11348] [LAPTOP-MN8EGV0E] [logger] [127.0.0.1 - - "GET /admin/users HTTP/1.1" 500 2743 "" "PostmanRuntime/6.2.5"]
+[22:59:09.860] [INFO] [15672] [LAPTOP-MN8EGV0E] [logger] [127.0.0.1 - - "GET /admin/users HTTP/1.1" 403 - "" "PostmanRuntime/6.2.5"]
